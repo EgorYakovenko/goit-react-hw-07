@@ -49,25 +49,7 @@ const contactsSlice = createSlice({
         state.loading = false;
         state.error = true;
       }),
-
-  // reducers: {
-  //   addContact(state, action) {
-  //     state.items.push({
-  //       id: nanoid(),
-  //       name: action.payload.name,
-  //       number: action.payload.number,
-  //     });
-  //   },
-  //   deleteContact(state, action) {
-  //     const index = state.items.findIndex(
-  //       contact => contact.id === action.payload
-  //     );
-  //     state.items.splice(index, 1);
-  //   },
-  // },
 });
-
-// export const { addContact } = contactsSlice.actions;
 
 export const contactsReducer = contactsSlice.reducer;
 

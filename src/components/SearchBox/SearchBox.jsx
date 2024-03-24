@@ -5,12 +5,11 @@ import css from './SearchBox.module.css';
 
 function SearchBox() {
   const filter = useSelector(selectNameFilter);
-  // console.log(filter);
+
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
     e.preventDefault();
-    // console.log(e.target.elements.value);
   };
   return (
     <form className={css.container} onSubmit={handleSubmit}>
