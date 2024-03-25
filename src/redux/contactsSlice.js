@@ -65,7 +65,7 @@ export const selectError = state => state.contacts.error;
 //   });
 // };
 
-export const selectFillerContacts = createSelector(
+export const selectFilteredContacts = createSelector(
   [selectContacts, selectNameFilter],
   (contacts, filter) => {
     return contacts.filter(contact =>
